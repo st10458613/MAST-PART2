@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Service App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Christoffel's Culinary Service</h1>
+            <p id="totalMenuItems">Total Menu Items: 6</p>
+            <button id="addMenuItemBtn">Add Menu Item</button>
+        </header>
+        <main>
+            <h2>Menu</h2>
+            <div class="course-section">
+                <h3>Starters</h3>
+                <ul id="startersList">
+                    <li>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Beef_tartare.jpg" alt="Beef Tartare">
+                       
+                        <div>
+                            <strong>Beef Tartare</strong> - A classic starter. R125
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://example.com/salmon-tartare.jpg" alt="Salmon Tartare">
+                        <div>
+                            <strong>Salmon Tartare</strong> - Fresh and zesty. R140
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="course-section">
+                <h3>Mains</h3>
+                <ul id="mainsList">
+                    <li>
+                        <img src="https://example.com/roasted-lamb.jpg" alt="Roasted Lamb">
+                        <div>
+                            <strong>Roasted Lamb</strong> - Tender and flavorful. R280
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://example.com/grilled-salmon.jpg" alt="Grilled Salmon">
+                        <div>
+                            <strong>Grilled Salmon</strong> - Light and healthy. R300
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="course-section">
+                <h3>Desserts</h3>
+                <ul id="dessertsList">
+                    <li>
+                        <img src="https://example.com/chocolate-fondant.jpg" alt="Chocolate Fondant">
+                        <div>
+                            <strong>Chocolate Fondant</strong> - Rich and gooey. R200
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://example.com/vanilla-icecream.jpg" alt="Vanilla Ice Cream">
+                        <div>
+                            <strong>Vanilla Ice Cream</strong> - Creamy and classic. 150
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Menu Item</h2>
+            <input type="text" id="dishName" placeholder="Dish Name" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="text" id="price" placeholder="Price" required>
+            <input type="text" id="imageUrl" placeholder="Image URL" required>
+            <select id="course">
+                <option value="Starters">Starters</option>
+                <option value="Mains">Mains</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+            <button id="submitBtn">Add Item</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
